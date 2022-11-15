@@ -1,0 +1,9 @@
+<header>
+    <div class="user-info" *ngIf="isLoggedIn">
+        <div class="userName"> Username: <span> {{ currentUser.name }} </span> </div>
+        <div class="balance"> Balance: <span> {{ getBalance }} </span> </div>
+    </div>
+    <div class="user-login" *ngIf="!isLoggedIn">
+        <a href="http://www-staging.csgoroll.com/">Login</a>
+    </div>
+</header>

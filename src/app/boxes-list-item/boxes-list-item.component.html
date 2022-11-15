@@ -1,0 +1,12 @@
+<div class="content">
+    <div class="icon">
+        <img [src]="item.iconUrl" [alt]="item.name">
+    </div>
+    <div class="info">
+        <div class="name"> <span> {{ item.name }} </span> </div>
+        <div class="price"> <span> Price: {{ item.cost }} </span> </div>
+    </div>
+    <div class="button" (click)="navigate(item.id)">
+        <div class="btn"> Open Box </div>
+    </div>
+</div>

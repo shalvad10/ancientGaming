@@ -1,0 +1,10 @@
+@import '../../assets/css/variables.scss';
+
+.content {
+    .row {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax($min-width,1fr));
+        grid-gap: 1.25rem;
+        padding: 1.25rem 0;
+    }
+}

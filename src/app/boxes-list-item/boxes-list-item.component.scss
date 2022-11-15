@@ -1,0 +1,61 @@
+@import '../../assets/css/variables.scss';
+
+.content {
+    position: relative;
+    height: 100%;
+    margin: 10px;
+    box-shadow: 0 0 17px 11px #0000001a, 0 10px 37px -5px #0003;
+    background-color: $box-background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+
+    .icon {
+        height: 160px;
+        img {
+            height: 100%;
+        }
+    }
+
+    .info {
+        .name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            span {
+                color: $name-text-color;
+            }
+        }
+        .price {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            span {
+                padding: 5px;
+                border-radius: 10px;
+                background-color: rgba($color: $price-text-color, $alpha: 0.2);
+                color: $price-text-color;
+            }
+        }
+    }
+    .button {
+        width: 90%;
+        .btn {
+            background-color: $button-background;
+            padding: 10px 0px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all ease-in-out 0.5s;
+            &:hover {
+                background-color: $button-background-hover;
+            }
+        }
+    }
+}
